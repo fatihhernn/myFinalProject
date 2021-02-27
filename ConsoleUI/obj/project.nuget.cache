@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "NNvBDKo5oJR6twnDn93mwnpi6Vtbbz4pHD/YwpWnPmMO/bEutcFUuUoexPOdyYKj4j8hxOVOC1L7N3wIKjBzqg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Lenovo\\source\\repos\\MyFinalProject\\ConsoleUI\\ConsoleUI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
