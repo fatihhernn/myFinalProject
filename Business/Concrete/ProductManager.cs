@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Business.BusinessAspects.Autofac;
 using Business.CCS;
 using Business.Constants;
 using Business.ValidationRules.FluentValidation;
@@ -37,17 +38,21 @@ namespace Business.Concrete
 
         //[ValidationAspect(typeof(ProductValidator))] =>attribute => metoda anlam katıyor burada add metoduna senin bir validation aspect var diyoruz onu da AUTOFAC devreye sokuyor
 
+        //claim => iddia "admin", "editor" bir claim'dir.
+        [SecuredOperation("product.add,admin")]
         public IResult Add(Product product)
         {
 
+            #region CodeSmell_1
             //bir kategoride en fazla 10 ürün bulunabilir.
             //int result = _productDal.GetAll(p => p.CategoryID == product.CategoryID).Count;
             //if (result>=10)
             //{
             //    return new ErrorResult(Messages.ProductCountError);
             //}
+            #endregion
 
-
+            #region CodeSmell_2
             //if (CheckIfProductCountOfCategoryCorrect(product.CategoryID).Success)
             //{
             //    if (CheckIfProductNameExist(product.ProductName).Success)
@@ -57,10 +62,11 @@ namespace Business.Concrete
             //    }               
             //}
             //return new ErrorResult();
+            #endregion
 
             //iş kurallarını parametre olarak gönder
 
-            IResult result= BusinessRules.Run(
+            IResult result = BusinessRules.Run(
                     CheckIfProductNameExist(product.ProductName),
                     CheckIfProductCountOfCategoryCorrect(product.CategoryID),
                     CheckIfCategoryLimitExcced()
@@ -112,7 +118,7 @@ namespace Business.Concrete
             return new SuccessDataResult<List<ProductDetailDto>>(_productDal.GetProductDetails());
         }
 
-        [ValidationAspect(typeof(ProductValidator))]
+       // [ValidationAspect(typeof(ProductValidator))]
         public IResult Update(Product product)
         {
             _productDal.Update(product);
@@ -150,7 +156,7 @@ namespace Business.Concrete
         {
             var result = _categoryService.GetAll();
 
-            if (result.Data.Count>15)
+            if (result.Data.Count>30)
             {
                 return new ErrorResult(Messages.CategoryLimitExceed);
             }

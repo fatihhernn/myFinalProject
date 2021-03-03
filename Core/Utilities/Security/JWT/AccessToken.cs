@@ -4,7 +4,9 @@ using System.Text;
 
 namespace Core.Utilities.Security.JWT
 {
-    class AccessToken
+    public class AccessToken//erişim anahtarı
     {
+        public string Token { get; set; } //jwt-nin kendisi
+        public DateTime Expiration { get; set; } //ne zaman sonlanacağını verir
     }
 }

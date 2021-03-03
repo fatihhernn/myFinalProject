@@ -71,3 +71,4 @@ C:\Users\Lenovo\source\repos\MyFinalProject\WebAPI\obj\Debug\netcoreapp3.1\WebAP
 C:\Users\Lenovo\source\repos\MyFinalProject\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Lenovo\source\repos\MyFinalProject\WebAPI\bin\Debug\netcoreapp3.1\FluentValidation.dll
 C:\Users\Lenovo\source\repos\MyFinalProject\WebAPI\obj\Debug\netcoreapp3.1\scopedcss\bundle\WebAPI.styles.css
+C:\Users\Lenovo\source\repos\MyFinalProject\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll

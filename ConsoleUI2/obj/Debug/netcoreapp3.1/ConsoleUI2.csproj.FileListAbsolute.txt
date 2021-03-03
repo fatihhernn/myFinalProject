@@ -65,3 +65,5 @@ C:\Users\Lenovo\source\repos\MyFinalProject\ConsoleUI2\bin\Debug\netcoreapp3.1\A
 C:\Users\Lenovo\source\repos\MyFinalProject\ConsoleUI2\bin\Debug\netcoreapp3.1\Autofac.Extras.DynamicProxy.dll
 C:\Users\Lenovo\source\repos\MyFinalProject\ConsoleUI2\bin\Debug\netcoreapp3.1\Castle.Core.dll
 C:\Users\Lenovo\source\repos\MyFinalProject\ConsoleUI2\bin\Debug\netcoreapp3.1\FluentValidation.dll
+C:\Users\Lenovo\source\repos\MyFinalProject\ConsoleUI2\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\Lenovo\source\repos\MyFinalProject\ConsoleUI2\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Features.dll
